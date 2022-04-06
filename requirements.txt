@@ -1,6 +1,6 @@
 -f https://download.pytorch.org/whl/cpu/torch-1.10.1%2Bcpu-cp37-cp37m-linux_x86_64.whl
 -f https://files.pythonhosted.org/packages/91/a6/d852cacd9b2444adfc3f821cabdc7c0d442b184139a720f631cbb3e91360/Pillow-6.2.2-pp373-pypy36_pp73-win32.whl
-torch==1.11.0
+torch==1.10.1+cpu
 Flask==2.1.1
 gunicorn
 numpy==1.21.4
