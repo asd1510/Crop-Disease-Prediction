@@ -1,3 +1,5 @@
+-f https://download.pytorch.org/whl/torch_stable.html
+torch==1.8.1+cpu
 Flask==2.1.1
 numpy==1.22.3
 pandas==1.4.2
@@ -7,7 +9,6 @@ scipy==1.8.0
 six==1.16.0
 sklearn==0.0
 threadpoolctl==3.1.0
-torch==0.4.1
 torchvision==0.2.2
 tqdm==4.19.9
 typing_extensions==4.1.1
