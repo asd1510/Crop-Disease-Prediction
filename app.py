@@ -60,8 +60,8 @@ disease_classes = ['Apple___Apple_scab',
 
 disease_model_path = 'models/plant_disease_model.pth'
 disease_model = ResNet9(3, len(disease_classes))
-disease_model.load_state_dict(torch.jit.load(
-    disease_model_path, map_location=torch.device('cpu')),strict=False)
+disease_model.load_state_dict(torch.load(
+    disease_model_path, map_location=torch.device('cpu')))
 disease_model.eval()
 
 
