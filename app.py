@@ -131,11 +131,6 @@ app = Flask(__name__)
 # render home page
 
 
-@ app.route('/')
-def home():
-    title = 'Harvestify - Home'
-    return render_template('index.html', title=title)
-
 # render crop recommendation form page
 
 
@@ -238,7 +233,7 @@ def home():
 # render disease prediction result page
 
 
-@app.route('/disease-predict', methods=['GET', 'POST'])
+@app.route('/', methods=['GET', 'POST'])
 def disease_prediction():
     title = 'Harvestify - Disease Detection'
 
