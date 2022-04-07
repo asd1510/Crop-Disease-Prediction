@@ -94,6 +94,20 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			}
 
 		}
+		
+		header {
+			/*background-color: rgba(30, 30, 30, 1);*/
+			background-color: #1877f2;
+			margin-top: 0rem;
+			display: block;
+
+		}
+		a {
+			color: white;
+			cursor: pointer;
+			font-weight: bolder;
+			font-size: 150%;
+		}
 	</style>
 	<script>
 		addEventListener("load", function () {
@@ -141,35 +155,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<link href="//fonts.googleapis.com/css?family=Thasadith:400,400i,700,700i&amp;subset=latin-ext,thai,vietnamese"
 		rel="stylesheet">
 	<!-- //google fonts -->
-
-	<style>
-		header {
-			background-color: rgba(30, 30, 30, 1);
-			margin-top: 0rem;
-			display: block;
-
-		}
-	</style>
 </head>
 
 <body>
 
 	<!-- Navigation -->
-	<nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top" style="background-color: #1C00ff00;">
-		<a href="https://corp-farm.netlify.app/">Corp-Farm</a>
-		<div class="container">
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
-				aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-			<div class="collapse navbar-collapse" id="navbarResponsive">
-				<ul class="navbar-nav ml-auto">
-					<li class="nav-item">
-						<a class="nav-link" href="{{ url_for('disease_prediction') }}">Disease</a>
-					</li>
-				</ul>
-			</div>
-		</div>
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top" style="background-color: #1877f2 !important;">
+		<a href="https://corp-farm.netlify.app/" class="nav-link">Corp-Farm</a>
 	</nav>
 
 
