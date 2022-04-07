@@ -131,6 +131,27 @@ app = Flask(__name__)
 # render home page
 
 
+@ app.route('/', methods=['GET', 'POST'])
+def home():
+    title = 'Harvestify - Disease Detection'
+
+    if request.method == 'POST':
+        if 'file' not in request.files:
+            return redirect(request.url)
+        file = request.files.get('file')
+        if not file:
+            return render_template('disease.html', title=title)
+        try:
+            img = file.read()
+
+            prediction = predict_image(img)
+
+            prediction = Markup(str(disease_dic[prediction]))
+            return render_template('disease-result.html', prediction=prediction, title=title)
+        except:
+            pass
+    return render_template('disease.html', title=title)
+
 # render crop recommendation form page
 
 
@@ -233,7 +254,7 @@ app = Flask(__name__)
 # render disease prediction result page
 
 
-@app.route('/', methods=['GET', 'POST'])
+@app.route('/disease-predict', methods=['GET', 'POST'])
 def disease_prediction():
     title = 'Harvestify - Disease Detection'
 
